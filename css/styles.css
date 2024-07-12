@@ -31,7 +31,8 @@ body {
     flex-grow: 1;
 }
 .container .main-content .header-dashboard {
-    padding: 10px;
+    padding: 20px;
+    height: 80px;
     box-sizing: border-box;
 }
 
