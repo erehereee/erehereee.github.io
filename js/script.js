@@ -11,6 +11,6 @@ powerList.addEventListener('mouseleave', function() {
     powerListItem.classList.add('hide');
 });
 powerList.addEventListener('click', function() {
-    powerList.classList.remove('hide');
-    powerListItem.classList.remove('hide');
+    powerList.classList.toggle('hide');
+    powerListItem.classList.toggle('hide');
 });

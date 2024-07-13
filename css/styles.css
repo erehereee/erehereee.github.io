@@ -173,6 +173,30 @@ body {
 
 /*  */
 
+.container .sidebar.hide .main-menu .menu-list.hide:hover{
+    height: 40px;
+    width: 60px;
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in .2s;
+}
+
+.container .sidebar.hide .main-menu .menu-list.hide{
+    height: 40px;
+    width: 60px;
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in .2s;
+}
+
 .container .sidebar .main-menu .menu-list.hide {
     height: 40px;
     width: 200px;
