@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
 <body>
     <div class="container">
         <div class="sidebar">
@@ -28,11 +29,19 @@
                         <span class="description">Dashboard</span>
                     </a>
                 </div>
-                <div class="menu">
+                <div class="menu-list hide" id="power-list">
                     <a href="#">
                         <img src="assets/power.png" alt="" class="icon">
                         <span class="description">Power Monitoring</span>
                     </a>
+                    <div class="list-item hide" id="power-list-item">
+                        <a href="">
+                        <li>PLN</li>
+                        </a>
+                        <a href="">
+                        <li>Genset</li>
+                        </a>
+                    </div>
                 </div>
                 <div class="menu">
                     <a href="#">
@@ -50,13 +59,10 @@
         </div>
         <div class="main-content">
             <div class="header-dashboard">
-                <div class="hamburger">
+                <div class="hamburger" id="hamburger-button">
                     <div class="menu">
-                        <a href="">
-                            <img src="assets/hamburger.png" alt="" class="small-icon">
-                        </a> 
+                        <img src="assets/hamburger.png" alt="" class="small-icon">
                     </div>
-                    
                 </div>
                 <div class="utility">
                     <div class="alarm">
@@ -77,5 +83,8 @@
         </div>
     </div>
 
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>

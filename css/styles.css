@@ -8,8 +8,8 @@
 } */
 
 :root {
-    --primary : rgb(219, 224, 228);
-    --secondary : rgb(28, 72, 131);
+    --primary: rgb(219, 224, 228);
+    --secondary: rgb(28, 72, 131);
 }
 
 * {
@@ -19,17 +19,20 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
+    background-color: var(--primary);
 }
 
 .container {
     display: flex;
     min-height: 100vh;
+
 }
 
 .container .main-content {
     background-color: var(--primary);
     flex-grow: 1;
 }
+
 .container .main-content .header-dashboard {
     padding: 20px;
     height: 80px;
@@ -43,20 +46,26 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    transition: all ease-in-out .2s;
+}
+
+.container .sidebar.hide {
+    width: 87px;
+    transition: all ease-in-out .2s;
 }
 
 .container .sidebar .header span {
-    color:var(--primary);
+    color: var(--primary);
 }
 
 
 .container .sidebar .header {
-    display: flex; 
+    display: flex;
     padding: 10px;
 }
 
-.container .sidebar .header a{
-    display: flex; 
+.container .sidebar .header a {
+    display: flex;
     align-items: center;
 }
 
@@ -66,10 +75,14 @@ body {
     height: 40px;
 }
 
-.container .sidebar .header a span{
+.container .sidebar .header a span {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+}
+
+.container .sidebar.hide .header a span {
+    display: none;
 }
 
 .container .sidebar a {
@@ -81,34 +94,60 @@ body {
     flex-direction: column;
 }
 
+/*  */
+
 .container .sidebar .main-menu .menu {
     height: 40px;
-    width: 200px;  
-    display: flex; 
+    width: 200px;
+    display: flex;
     padding: 10px;
     margin: 10px auto;
     box-sizing: border-box;
     border-radius: 10px;
     overflow: hidden;
-    transition : all ease-in .2s;
-    
+    transition: all ease-in .2s;
+}
+
+.container .sidebar.hide .main-menu .menu{
+    height: 40px;
+    width: 60px;
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in .2s;
 }
 
 .container .sidebar .main-menu .menu:hover {
     background-color: var(--primary);
     height: 40px;
-    width: 200px;  
-    display: flex; 
+    width: 200px;
+    display: flex;
     padding: 10px;
     margin: 10px auto;
     box-sizing: border-box;
     border-radius: 10px;
     overflow: hidden;
-    transition : all ease-in .2s;
+    transition: all ease-in .2s;
+}
+
+.container .sidebar.hide .main-menu .menu:hover {
+    background-color: var(--primary);
+    height: 40px;
+    width: 60px;
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in .2s;
 }
 
 .container .sidebar .main-menu .menu a {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -122,10 +161,129 @@ body {
     color: var(--primary);
     font-size: 15px;
 }
+
+.container .sidebar.hide .main-menu .menu a .description {
+    display: none;
+}
+
 .container .sidebar .main-menu .menu:hover a .description {
     color: var(--secondary);
     font-size: 15px;
 }
+
+/*  */
+
+.container .sidebar .main-menu .menu-list.hide {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in .2s;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .sidebar .main-menu .menu-list.hide:hover {
+    background-color: var(--primary);
+    height: 40px;
+    width: 200px;
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in .2s;
+    justify-content: center;
+}
+
+.container .sidebar .main-menu .menu-list {
+    height: 130px;
+    width: 200px;
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-in .2s;
+    flex-direction: column;
+}
+
+.container .sidebar .main-menu .menu-list a {
+    display: flex;
+    align-items: center;
+}
+
+.container .sidebar .main-menu .menu-list a .icon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.container .sidebar .main-menu .menu-list a .description {
+    color: var(--primary);
+    font-size: 15px;
+}
+
+.container .sidebar .main-menu .menu-list.hide:hover a .description {
+    color: var(--secondary);
+    font-size: 15px;
+}
+
+.container .sidebar.hide .main-menu .menu-list a .description {
+    display: none;
+}
+
+.container .sidebar .main-menu .menu-list .list-item {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 200px;
+height: 100px;
+}
+
+.container .sidebar .main-menu .menu-list .list-item.hide {
+    display: none;
+}
+
+.container .sidebar .main-menu .menu-list .list-item a{
+    display: flex;
+    margin-left: 70px;
+}
+
+.container .sidebar .main-menu .menu-list .list-item a li{
+    color: var(--primary);
+    font-size: 400;
+    font-style: normal;
+    margin: 5px;
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all ease-in .2s;
+}
+
+.container .sidebar .main-menu .menu-list .list-item a li:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 400;
+    font-style: normal;
+    margin: 5px;
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all ease-in .2s;
+}
+
+
+
+/*  */
 
 .container .main-content .header-dashboard {
     display: flex;
@@ -142,7 +300,7 @@ body {
     align-items: center;
 }
 
-.container .main-content span{
+.container .main-content span {
     color: var(--primary);
 }
 
@@ -159,9 +317,11 @@ body {
 .container .main-content .header-dashboard .utility .user {
     order: 3;
 }
+
 .container .main-content .header-dashboard .utility .user-information {
     order: 2;
 }
+
 .container .main-content .header-dashboard .small-icon {
     width: 40px;
     height: 40px;
