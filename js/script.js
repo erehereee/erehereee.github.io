@@ -10,7 +10,7 @@ powerList.addEventListener('mouseleave', function() {
     powerList.classList.add('hide');
     powerListItem.classList.add('hide');
 });
-powerList.addEventListener('mouseenter', function() {
+powerList.addEventListener('click', function() {
     powerList.classList.remove('hide');
     powerListItem.classList.remove('hide');
 });
