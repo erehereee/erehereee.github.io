@@ -212,6 +212,7 @@ body {
     overflow: hidden;
     transition: all ease-in .2s;
     flex-direction: column;
+    justify-content: center;
 }
 
 .container .sidebar .main-menu .menu-list a {
