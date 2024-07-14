@@ -376,32 +376,134 @@ height: 100px;
     height: 40px;
 }
 
-.container .main-content .main-dashboard .top {
+.container .main-content .main-dashboard .top {    
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container .main-content .main-dashboard .top .selector {
+    background-color: var(--secondary);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: var(--secondary);
-    height: 200px;
-    margin: 10px;
-    
 }
+
+.container .main-content .main-dashboard .top .selector .phase3 {
+    background-color: var(--primary);
+    display: flex;
+    width: 50px;
+    order: 1;
+}
+
+.container .main-content .main-dashboard .top .selector .phase1{
+    background-color: var(--primary);
+    display: flex;
+    width: 50px;
+    order: 3;
+}
+
+.container .main-content .main-dashboard .top .selector span{
+    order: 2;
+}
+
 
 .container .main-content .main-dashboard .top .gauge-1phase {
     display: flex;
-    height: 170px;
-    width: 1600px;
-    background-color: var(--primary);
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    
-    
+.container .main-content .main-dashboard .top .gauge-1phase.hide {
+    display: none;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .container .main-content .main-dashboard .top .gauge-1phase .card {
     display: flex;
-    background-color:aqua;
-    width: 250px;
-    height: 100px;
+    flex-direction: column;
+    background-color:var(--secondary);
     margin: 10px;
+    width: 240px;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container .main-content .main-dashboard .top .gauge-1phase .card .card-header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.container .main-content .main-dashboard .top .gauge-1phase .card .card-body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    flex: 1;
+    color: var(--primary);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+.container .main-content .main-dashboard .top .gauge-2phase { */
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .main-content .main-dashboard .top .gauge-2phase.hide {
+    position: absolute;
+    display: none;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .main-content .main-dashboard .top .gauge-2phase .card {
+    display: flex;
+    flex-direction: column;
+    background-color:var(--secondary);
+    margin: 10px;
+    width: 240px;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container .main-content .main-dashboard .top .gauge-2phase .card .card-header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.container .main-content .main-dashboard .top .gauge-2phase .card .card-body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    flex: 1;
+    color: var(--primary);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
 }
