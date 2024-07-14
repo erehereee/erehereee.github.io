@@ -1,11 +1,28 @@
-/* @font-face {
-    font-family: "Ubuntu", sans-serif;
-    src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
-    src: url('fonts/Ubuntu-Regular.ttf') format('truetype');
-    src: url('fonts/Ubuntu-Medium.ttf') format('truetype');
-    font-weight: normal;
+@font-face {
+    font-family: 'Ubuntu';
     font-style: normal;
-} */
+    font-weight: 700;
+    src: url('../assets/fonts/ubuntu-b-webfont.woff2') format('woff2'),
+         url('../assets/fonts/ubuntu-b-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/ubuntu-m-webfont.woff2') format('woff2'),
+         url('../assets/fonts/ubuntu-m-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/ubuntu-r-webfont.woff2') format('woff2'),
+         url('../assets/fonts/ubuntu-r-webfont.woff') format('woff');
+}
 
 :root {
     --primary: rgb(219, 224, 228);
@@ -18,7 +35,7 @@
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu';
     background-color: var(--primary);
 }
 
@@ -54,10 +71,6 @@ body {
     transition: all ease-in-out .2s;
 }
 
-.container .sidebar .header span {
-    color: var(--primary);
-}
-
 
 .container .sidebar .header {
     display: flex;
@@ -76,6 +89,7 @@ body {
 }
 
 .container .sidebar .header a span {
+    color: var(--primary);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -159,6 +173,8 @@ body {
 
 .container .sidebar .main-menu .menu a .description {
     color: var(--primary);
+    font-style: normal;
+    font-weight: 400;
     font-size: 15px;
 }
 
@@ -168,6 +184,8 @@ body {
 
 .container .sidebar .main-menu .menu:hover a .description {
     color: var(--secondary);
+    font-style: normal;
+    font-weight: 400;
     font-size: 15px;
 }
 
@@ -252,11 +270,15 @@ body {
 
 .container .sidebar .main-menu .menu-list a .description {
     color: var(--primary);
+    font-style: normal;
+    font-weight: 400;
     font-size: 15px;
 }
 
 .container .sidebar .main-menu .menu-list.hide:hover a .description {
     color: var(--secondary);
+    font-style: normal;
+    font-weight: 400;
     font-size: 15px;
 }
 
@@ -340,6 +362,8 @@ height: 100px;
 }
 
 .container .main-content .header-dashboard .utility .user {
+    font-style: normal;
+    font-weight: 400;
     order: 3;
 }
 
