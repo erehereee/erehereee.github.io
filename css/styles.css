@@ -375,3 +375,33 @@ height: 100px;
     width: 40px;
     height: 40px;
 }
+
+.container .main-content .main-dashboard .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    height: 200px;
+    margin: 10px;
+    
+}
+
+.container .main-content .main-dashboard .top .gauge-1phase {
+    display: flex;
+    height: 170px;
+    width: 1600px;
+    background-color: var(--primary);
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+
+.container .main-content .main-dashboard .top .gauge-1phase .card {
+    display: flex;
+    background-color:aqua;
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+}
