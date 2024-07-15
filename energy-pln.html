@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plant Monitoring PT.Sasa Inti</title>
     <link rel="stylesheet" href="css/styles.css">
+
 <body>
     <div class="container">
         <div class="sidebar">
@@ -38,10 +39,10 @@
                     </a>
                     <div class="list-item hide" id="energy-list-item">
                         <a href="energy-pln.html">
-                        <li>PLN</li>
+                            <li>PLN</li>
                         </a>
                         <a href="energy-genset.html">
-                        <li>Genset</li>
+                            <li>Genset</li>
                         </a>
                     </div>
                 </div>
@@ -55,7 +56,7 @@
         </div>
         <div class="main-content">
             <div class="header-dashboard">
-                <div class="hamburger" >
+                <div class="hamburger">
                     <div class="menu" id="hamburger-button">
                         <img src="assets/img/hamburger.png" alt="" class="small-icon">
                     </div>
@@ -81,32 +82,125 @@
                 </div>
             </div>
             <div class="main-dashboard">
-                <div class="top">
-                    <div class="selector">
-                        <div class="title">
-                            <h3>Voltage/Current 1 Phase</h3>
-                        </div>
-                        <button class="phase3" id="change-button">
-                            CHANGE
-                        </button>
+                <div class="selector">
+                    <div class="title">
+                        <h3>Voltage/Current 1 Phase</h3>
                     </div>
-                    <div class="gauge-1phase hide">
-                        <div class="card">
-                            <div class="card-header">
-                                R-S Voltage
+                    <button class="phase3" id="change-button">
+                        CHANGE
+                    </button>
+                </div>
+                <div class="power-monitoring">
+                    <div class="top">
+                        <div class="gauge-1phase hide">
+                            <div class="card">
+                                <div class="card-header">
+                                    R-N Voltage
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
                             </div>
-                            <div class="card-body">
-                                Lorem
+                            <div class="card">
+                                <div class="card-header">
+                                    R-N Current
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    S-N Voltage
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    S-N Current
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    T-N Voltage
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    T-N Current
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                R-S Current
+                        <div class="gauge-3phase">
+                            <div class="card">
+                                <div class="card-header">
+                                    R-S Voltage
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
                             </div>
-                            <div class="card-body">
-                                Lorem
+                            <div class="card">
+                                <div class="card-header">
+                                    R-S Current
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    S-T Voltage
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    S-T Current
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    T-R Voltage
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    T-R Current
+                                </div>
+                                <div class="card-body">
+                                    Lorem
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="selector">
+                    <div class="title">
+                        <h3>Energy Monitoring</h3>
+                    </div>
+                </div>
+                <div class="energy-monitoring">
+                    <div class="left">
                         <div class="card">
                             <div class="card-header">
                                 S-T Voltage
@@ -140,23 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gauge-3phase">
-                        <div class="card">
-                            <div class="card-header">
-                                R-S Voltage
-                            </div>
-                            <div class="card-body">
-                                Lorem
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                R-S Current
-                            </div>
-                            <div class="card-body">
-                                Lorem
-                            </div>
-                        </div>
+                    <div class="right">
                         <div class="card">
                             <div class="card-header">
                                 S-T Voltage

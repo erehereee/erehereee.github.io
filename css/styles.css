@@ -398,25 +398,19 @@ height: 100px;
     height: 40px;
 }
 
-.container .main-content .main-dashboard .top {    
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.container .main-content .main-dashboard .top .selector {
+.container .main-content .main-dashboard .selector {
     background-color: var(--secondary);
     border-radius: 5px;
     display: flex;
     justify-content: flex-start;
     height: 40px;
     padding: 2px;
+    margin: 10px;
     flex: 1;
+    box-sizing: border-box;
 }
 
-.container .main-content .main-dashboard .top .selector .title {
+.container .main-content .main-dashboard .selector .title {
     color: var(--primary);
     border-radius: 5px;
     display: flex;
@@ -426,11 +420,25 @@ height: 100px;
     padding: 5px;
 }
 
-.container .main-content .main-dashboard .top .selector .title h3 {
+.container .main-content .main-dashboard .selector .title h3 {
     font-weight: 500;
     font-style: normal;
 }
-.container .main-content .main-dashboard .top .selector button {
+.container .main-content .main-dashboard .selector button:active {
+    background-color: rgba(219, 224, 228, .5);
+    display: flex;
+    width: 80px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.container .main-content .main-dashboard .selector button {
     background-color: var(--primary);
     display: flex;
     width: 80px;
@@ -441,64 +449,40 @@ height: 100px;
     justify-content: center;
     font-weight: 700;
     color: var(--secondary);
+    cursor: pointer;
 }
 
-.container .main-content .main-dashboard .top .gauge-1phase {
+.container .main-content .main-dashboard .power-monitoring .top {    
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.container .main-content .main-dashboard .power-monitoring .top .gauge-1phase {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.container .main-content .main-dashboard .top .gauge-1phase.hide {
+.container .main-content .main-dashboard .power-monitoring .top .gauge-1phase.hide {
     display: none;
     flex: 1;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.container .main-content .main-dashboard .top .gauge-1phase .card {
-    display: flex;
-    flex-direction: column;
-    background-color:var(--secondary);
-    margin: 10px;
-    width: 240px;
-    height: 150px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.container .main-content .main-dashboard .top .gauge-1phase .card .card-header {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    border-bottom: 1px solid;
-    padding: 10px;
-    box-sizing: border-box;
-    font-style: normal;
-    font-weight: 500;
-    color: var(--primary);
-}
-
-.container .main-content .main-dashboard .top .gauge-1phase .card .card-body {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    flex: 1;
-    color: var(--primary);
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-}
-.container .main-content .main-dashboard .top .gauge-3phase {
+.container .main-content .main-dashboard .power-monitoring .top .gauge-3phase {
     /* position: absolute; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.container .main-content .main-dashboard .top .gauge-3phase.hide {
+.container .main-content .main-dashboard .power-monitoring .top .gauge-3phase.hide {
     position: absolute;
     display: none;
     flex: 1;
@@ -506,7 +490,7 @@ height: 100px;
     justify-content: space-around;
 }
 
-.container .main-content .main-dashboard .top .gauge-3phase .card {
+.container .main-content .main-dashboard .card {
     display: flex;
     flex-direction: column;
     background-color:var(--secondary);
@@ -517,7 +501,7 @@ height: 100px;
     overflow: hidden;
 }
 
-.container .main-content .main-dashboard .top .gauge-3phase .card .card-header {
+.container .main-content .main-dashboard .card .card-header {
     display: flex;
     align-items: center;
     height: 40px;
@@ -529,7 +513,7 @@ height: 100px;
     color: var(--primary);
 }
 
-.container .main-content .main-dashboard .top .gauge-3phase .card .card-body {
+.container .main-content .main-dashboard .card .card-body {
     display: flex;
     align-items: center;
     text-align: center;
@@ -540,3 +524,57 @@ height: 100px;
     font-style: normal;
     font-weight: 700;
 }
+
+.container .main-content .main-dashboard .energy-monitoring { 
+    display: flex;
+    flex: 1;
+}
+
+.container .main-content .main-dashboard .energy-monitoring .left { 
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main-content .main-dashboard .energy-monitoring .right { 
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex: 2;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .container .main-content .main-dashboard .left .selector {
+    background-color: var(--secondary);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    padding: 2px;
+    flex: 1;
+}
+
+.container .main-content .main-dashboard .left .selector .title {
+    color: var(--primary);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.container .main-content .main-dashboard .left .selector .title h3 {
+    font-weight: 500;
+    font-style: normal;
+}  */
