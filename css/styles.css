@@ -354,6 +354,28 @@ height: 100px;
 .container .main-content .header-dashboard .hamburger {
     display: flex;
     align-items: flex-start;
+    align-items: center;
+}
+
+.container .main-content .header-dashboard .hamburger .power-state {
+    display: flex;
+    margin-left: 20px;
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 20px;
+    background-color: var(--primary);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container .main-content .header-dashboard .hamburger .power-state span{
+    color: black;
+    text-align: center;
+    width: 80px;
+    background-color: green;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 5px;
 }
 
 .container .main-content .header-dashboard .utility .alarm {
@@ -388,27 +410,38 @@ height: 100px;
     background-color: var(--secondary);
     border-radius: 5px;
     display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    padding: 2px;
+    flex: 1;
+}
+
+.container .main-content .main-dashboard .top .selector .title {
+    color: var(--primary);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.container .main-content .main-dashboard .top .selector .title h3 {
+    font-weight: 500;
+    font-style: normal;
+}
+.container .main-content .main-dashboard .top .selector button {
+    background-color: var(--primary);
+    display: flex;
+    width: 80px;
+    margin: 2px;
+    border: 1px solid;
+    border-radius: 3px;
+    align-items: center;
     justify-content: center;
+    font-weight: 700;
+    color: var(--secondary);
 }
-
-.container .main-content .main-dashboard .top .selector .phase3 {
-    background-color: var(--primary);
-    display: flex;
-    width: 50px;
-    order: 1;
-}
-
-.container .main-content .main-dashboard .top .selector .phase1{
-    background-color: var(--primary);
-    display: flex;
-    width: 50px;
-    order: 3;
-}
-
-.container .main-content .main-dashboard .top .selector span{
-    order: 2;
-}
-
 
 .container .main-content .main-dashboard .top .gauge-1phase {
     display: flex;
@@ -458,14 +491,14 @@ height: 100px;
     font-style: normal;
     font-weight: 700;
 }
-.container .main-content .main-dashboard .top .gauge-2phase { */
-    position: absolute;
+.container .main-content .main-dashboard .top .gauge-3phase {
+    /* position: absolute; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.container .main-content .main-dashboard .top .gauge-2phase.hide {
+.container .main-content .main-dashboard .top .gauge-3phase.hide {
     position: absolute;
     display: none;
     flex: 1;
@@ -473,7 +506,7 @@ height: 100px;
     justify-content: space-around;
 }
 
-.container .main-content .main-dashboard .top .gauge-2phase .card {
+.container .main-content .main-dashboard .top .gauge-3phase .card {
     display: flex;
     flex-direction: column;
     background-color:var(--secondary);
@@ -484,7 +517,7 @@ height: 100px;
     overflow: hidden;
 }
 
-.container .main-content .main-dashboard .top .gauge-2phase .card .card-header {
+.container .main-content .main-dashboard .top .gauge-3phase .card .card-header {
     display: flex;
     align-items: center;
     height: 40px;
@@ -496,7 +529,7 @@ height: 100px;
     color: var(--primary);
 }
 
-.container .main-content .main-dashboard .top .gauge-2phase .card .card-body {
+.container .main-content .main-dashboard .top .gauge-3phase .card .card-body {
     display: flex;
     align-items: center;
     text-align: center;

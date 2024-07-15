@@ -55,9 +55,13 @@
         </div>
         <div class="main-content">
             <div class="header-dashboard">
-                <div class="hamburger" id="hamburger-button">
-                    <div class="menu">
+                <div class="hamburger" >
+                    <div class="menu" id="hamburger-button">
                         <img src="assets/img/hamburger.png" alt="" class="small-icon">
+                    </div>
+                    <div class="power-state">
+                        Power State :
+                        <span>PLN</span>
                     </div>
                 </div>
                 <div class="utility">
@@ -79,14 +83,17 @@
             <div class="main-dashboard">
                 <div class="top">
                     <div class="selector">
-                        <div class="phase3"></div>
-                        <div class="phase1"></div>
-                        <span>text</span>
+                        <div class="title">
+                            <h3>Voltage/Current 1 Phase</h3>
+                        </div>
+                        <button class="phase3" id="change-button">
+                            CHANGE
+                        </button>
                     </div>
-                    <div class="gauge-1phase">
+                    <div class="gauge-1phase hide">
                         <div class="card">
                             <div class="card-header">
-                                Lorem 2 dolor sit amet.
+                                R-S Voltage
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -94,7 +101,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 2 dolor sit amet.
+                                R-S Current
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -102,7 +109,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 2 dolor sit amet.
+                                S-T Voltage
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -110,7 +117,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 2 dolor sit amet.
+                                S-T Current
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -118,7 +125,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 2 dolor sit amet.
+                                T-R Voltage
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -126,17 +133,17 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 2 dolor sit amet.
+                                T-R Current
                             </div>
                             <div class="card-body">
                                 Lorem
                             </div>
                         </div>
                     </div>
-                    <div class="gauge-2phase hide">
+                    <div class="gauge-3phase">
                         <div class="card">
                             <div class="card-header">
-                                Lorem 1 dolor sit amet.
+                                R-S Voltage
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -144,7 +151,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 1 dolor sit amet.
+                                R-S Current
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -152,7 +159,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 1 dolor sit amet.
+                                S-T Voltage
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -160,7 +167,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 1 dolor sit amet.
+                                S-T Current
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -168,7 +175,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 1 dolor sit amet.
+                                T-R Voltage
                             </div>
                             <div class="card-body">
                                 Lorem
@@ -176,7 +183,7 @@
                         </div>
                         <div class="card">
                             <div class="card-header">
-                                Lorem 1 dolor sit amet.
+                                T-R Current
                             </div>
                             <div class="card-body">
                                 Lorem
