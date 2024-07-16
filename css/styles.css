@@ -398,6 +398,11 @@ height: 100px;
     height: 40px;
 }
 
+.container .main-content .main-dashboard {
+
+    overflow: auto;
+}
+
 .container .main-content .main-dashboard .selector {
     background-color: var(--secondary);
     border-radius: 5px;
@@ -458,7 +463,6 @@ height: 100px;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: aqua;
 }
 
 .container .main-content .main-dashboard .power-monitoring .top .gauge-1phase {
@@ -537,7 +541,6 @@ height: 100px;
     box-sizing: border-box;
     flex-wrap: wrap;
     flex: 1;
-    background-color: aqua;
     justify-content: center;
     align-items: center;
 }
@@ -549,9 +552,13 @@ height: 100px;
     box-sizing: border-box;
     flex-wrap: wrap;
     flex: 2;
-    background-color: aqua;
     justify-content: center;
     align-items: center;
+}
+
+.container .main-content .main-dashboard .energy-monitoring .right canvas { 
+    display: flex;
+    flex: 1;
 }
 
 /* .container .main-content .main-dashboard .left .selector {
