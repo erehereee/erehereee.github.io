@@ -1,12 +1,13 @@
-var ctx = document.getElementById('energy-chart').getContext('2d');
+let ctx = document.getElementById('energy-chart').getContext('2d');
 
-var chart =  new Chart(ctx, {
+let chart =  new Chart(ctx, {
     type: 'line',
     data: {
       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
       datasets: [{
         label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [], 
+        backgroundColor: '#FFB1C1',
         borderWidth: 1
       }]
     },
@@ -18,3 +19,28 @@ var chart =  new Chart(ctx, {
       }
     }
   });
+
+let updateData = function (value) {
+  let data = chart.data.datasets[0].data;
+    if(data.length == 6) {
+      data.shift();
+      data.push(value);
+    }
+    else {
+      data.push(value);
+    }
+  chart.update();
+}
+
+let xhr = new XMLHttpRequest();
+xhr.onreadystatechange = async function() {
+  if(xhr.readyState == 4 && xhr.status == 200) {
+    let data1 = await JSON.parse(this.responseText).data1;
+    for (let i = 0; i < data1.length; i++) {
+      updateData(data1[i]);
+    }
+  }
+}
+
+xhr.open('GET', 'json/test.json', true);
+xhr.send();
